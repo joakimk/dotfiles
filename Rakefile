@@ -7,6 +7,7 @@ def info_rm(text) info(text, "x") end
  
 desc "Install dotfiles."
 task :install do
+  system "git submodule update --init"
   Dir["*"].each do |file|
     source = File.join(Dir.pwd, file)
     basename = File.basename(source)
