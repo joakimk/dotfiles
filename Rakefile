@@ -8,8 +8,6 @@ def info_rm(text) info(text, "x") end
 desc "Install dotfiles."
 task :install do
   Dir["*"].each do |file|
-    next unless [ "vim", "bash", "irbrc", "railsrc", "gitconfig", "ackrc" ].find { |x| file.include?(x) }
-
     source = File.join(Dir.pwd, file)
     basename = File.basename(source)
     next if IGNORE_FILES.include?(basename)
