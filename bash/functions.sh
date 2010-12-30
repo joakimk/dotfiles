@@ -5,7 +5,7 @@
 #     /Users/jocke/.rvm/gems/ree-1.8.7-2010.02@auktion/gems/thor-0.14.6
 #
 function cdgem {
-  cd `ruby -rubygems -e "puts Gem.path.first + '/gems'"`; cd `ls|grep $1|sort|tail -1`
+  cd `rvm gemdir`/gems; cd `ls|grep $1|sort|tail -1`
 }
 
 # Print working file.
