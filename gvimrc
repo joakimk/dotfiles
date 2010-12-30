@@ -1,4 +1,3 @@
-
 if has("gui_macvim")
   " Fullscreen takes up entire screen
   set fuoptions=maxhorz,maxvert
@@ -39,10 +38,7 @@ endif
 " Start without the toolbar
 set guioptions-=T
 
-set guifont=Monaco:h11
-
-" Default gui color scheme
-color blackboard 
+set guifont=Monaco:h12
 
 " Highlight the current line
 set cursorline
@@ -170,3 +166,7 @@ call s:DefineCommand("cd", "ChangeDirectory")
 call s:DefineCommand("touch", "Touch")
 call s:DefineCommand("rm", "Remove")
 call s:DefineCommand("e", "Edit")
+
+" Don't show NERDTree when starting
+autocmd VimEnter * NERDTreeClose
+

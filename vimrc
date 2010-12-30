@@ -10,7 +10,7 @@ call pathogen#helptags()
 
 filetype plugin indent on  " Load plugin and indent settings for the detected filetype.
 syntax on                  " Syntax highlighting.
-color blackboard           " Default color scheme.
+color jellybeans+          " Default color scheme.
 set number                 " Show gutter with line numbers.
 set ruler                  " Show line, column and scroll info in status line.
 set laststatus=2           " Always show status bar.
@@ -43,6 +43,9 @@ set gdefault    " Global search by default; /g for first-per-row only.
 set nojoinspaces                " 1 space, not 2, when joining sentences.
 set backspace=indent,eol,start  " Allow backspacing over everything in insert mode.
 
+" Don't break words when wrapping
+set nolist
+set lbr
 
 " NERDTree configuration
 let NERDTreeIgnore=['\.rbc$', '\~$']
@@ -148,10 +151,8 @@ vmap <C-Down> ]egv
 set backupdir=~/.vim/backup
 set directory=~/.vim/backup
 
-
 " Leader
-
-let mapleader = ","
+"let mapleader = ","
 
 " Un-highlight search matches
 nnoremap <leader><leader> :noh<CR>
@@ -182,3 +183,4 @@ nmap <leader><down>   :rightbelow sp<CR>
 " Get rid of all NERDCommenter mappings except one.
 let g:NERDCreateDefaultMappings=0
 map <leader>c <Plug>NERDCommenterToggle
+
