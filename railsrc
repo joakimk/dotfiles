@@ -14,6 +14,16 @@ def log_off
   set_logger_to RAILS_DEFAULT_LOGGER
 end
 
+# Table formatted model data
+def h
+  require 'hirb'
+  Hirb.enable
+end
+
+def hoff
+  Hirb.disable  
+end
+
 def set_logger_to(logger)
   def logger.flush; end unless logger.respond_to?(:flush)
   ActiveRecord::Base.logger = logger

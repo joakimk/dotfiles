@@ -13,7 +13,6 @@ rescue LoadError => err
   warn "Couldn't load Wirble: #{err}"
 end
 
-
 # Quick benchmarking
 # http://stackoverflow.com/questions/123494/whats-your-favourite-irb-trick/123834#123834
 def bench(repetitions=100, &block)
@@ -23,6 +22,13 @@ def bench(repetitions=100, &block)
     b.report {repetitions.times &block} 
   end
   nil
+end
+
+module Kernel
+  # list or search an object's methods
+  def m(query = String.new)
+    (self.methods - Object.methods).reject { |method_name| method_name.scan(query).size.zero? }.sort
+  end
 end
 
 # Pre-defined hash and array to experiment with.
@@ -46,7 +52,6 @@ IRB.conf[:PROMPT][:SIMPLE].merge!(:PROMPT_I => lambda {
   "#{[ ENV['RAILS_ENV'] && Rails.env.first(3).upcase, Time.now.strftime("%H:%M:%S") ].compact.join(' ')} >> "
 })
 IRB.conf[:PROMPT_MODE] = :SIMPLE
-
 
 # Load .railsrc for Rails.
 load File.dirname(__FILE__) + '/.railsrc' if $0 == 'irb' && ENV['RAILS_ENV'] 
