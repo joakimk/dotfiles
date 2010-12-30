@@ -1,21 +1,10 @@
 [user]
-	name = Henrik N
-	email = henrik@nyh.se
-[core]
-	excludesfile = /Users/henrik/.gitignore
-	ignorecase = false
-[color]
-	status = auto
-	diff = auto
-	branch = auto
-[branch "master"]
-	merge = master
+        name = Joakim Kolsjö
+        email = joakim.kolsjo@gmail.com
+[status]
+	color = auto
+[diff]
+	color = auto
 [alias]
-	gay = shortlog -s -n
 	standup = shortlog --since=yesterday
 	uncommit = reset --soft HEAD^
-[github]
-	user = henrik
-	token = <.replace github-token>
-[push]
-	default = current
