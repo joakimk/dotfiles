@@ -1,10 +1,11 @@
 # cd gem
-#
-#     henrik@Nyx ~$ cdgem activerecord
-#     henrik@Nyx /Library/Ruby/Gems/1.8/gems/activerecord-3.0.0.beta$
+#     
+#     macbook:auktion (master) $ cdgem thor
+#     macbook:thor-0.14.6 $ pwd
+#     /Users/jocke/.rvm/gems/ree-1.8.7-2010.02@auktion/gems/thor-0.14.6
 #
 function cdgem {
-  cd /Library/Ruby/Gems/1.8/gems/; cd `ls|grep $1|sort|tail -1`
+  cd `ruby -rubygems -e "puts Gem.path.first + '/gems'"`; cd `ls|grep $1|sort|tail -1`
 }
 
 # Print working file.
