@@ -1,15 +1,16 @@
 # Dirs
-alias a="cd ~/Sites/auktion"
-alias i="cd ~/Code/iPhone/AK"
+alias p="cd ~/Projects"
+alias a="cd ~/Projects/auktion"
+alias pa="cd ~/Projects/auktion"
 alias o="open ."  # OS X, open in Finder
 
 # http://www.hogbaysoftware.com/products/plaintext
 alias text='mvim ~/Dropbox/PlainText'
 
 # Management
-alias dots="mvim ~/.dotfiles"
+alias dots="mvim ~/Projects/dotfiles"
 alias reload='source ~/.bash_profile && echo "sourced ~/.bash_profile"'
-alias redot='cd ~/.dotfiles && rake install; cd -'
+alias redot='cd ~/Projects/dotfiles && rake install; cd -'
 
 # Shell
 alias c='clear'
@@ -29,42 +30,43 @@ elif ls -G -d . >/dev/null 2>&1; then
 fi
 
 # Ruby on Rails
-alias sc="[ -f script/cconsole ] && script/cconsole || script/console"  # cconsole is for MRI console (boots faster) in JRuby projects.
-alias ss="script/server"
+alias ss='script/server'   
+alias ssp='DEV=true script/server -e production'
+alias sc='script/console'
 alias at="script/autospec -f -c"
 alias cu='script/cucumber features -b -s -f progress'
 alias cuf='rake features:focus'
 alias mig='rake db:migrate'
-
-# JRuby
-alias jake="jruby --headless -S rake"
-alias jem="sudo jruby --headless -S gem"
+alias mpr='mate-open app features config lib db/schema.rb db/migrate public spec script/cruise stories test todo.txt script/cron script/oneoff script/app Gemfile'
+alias tdev='tail -n 90 -f log/development.log'
+alias tdevp='tdev | egrep "*Parameters"'
+alias tprod='tail -f log/production.log'
+alias sp='script/spork'
+alias spc='script/spork cucumber'
 
 # Git
 alias gl="git log"
-alias glm="git log | mate"
 alias gs="git status"
+alias gst="git status"
 alias gw="git show"
 alias gd="git diff"  # What's changed but not yet added?
 alias gdc="git diff --cached"  # What's added but not yet committed?
-alias gdm="git diff | mate"
-alias gc="git commit -a -m"
-alias gco="git commit -m"  # "only"
-alias gca="git add . && git commit -a -m"  # "all"
+alias ga='git add'
+alias gc="git commit -v -a"
+alias gca="git commit -v -a"
+alias gam="git commit --amend"
+alias gco="git checkout"
+alias go="git checkout"
+alias gb="git checkout -b --color"
+alias gba='git branch -a --color'
 alias gp='git push'
 alias gpp='git pull && git push'
-alias go="git checkout"
-alias gb="git checkout -b"
-alias got="git checkout -"
-alias gom="git checkout master"
-alias gr="git branch -d"
-alias grr="git branch -D"
 alias gcp="git cherry-pick"
-alias gam="git commit --amend"
-
-# TextMate
-alias m="mate"
-alias mm="mate ."
+alias gm='git merge'
+alias gbt='git branch --track' # stubs origin/stubs
+alias mim='mergeinmaster'
+alias grb='git-remote-branch'
+alias stats='git shortlog -s -n'
 
 # Xcode versioning
 # http://www.blog.montgomerie.net/easy-iphone-application-versioning-with-agvtool
@@ -75,26 +77,27 @@ alias xvset="agvtool new-marketing-version"  # Set user-visible version: xvset 2
 # Servers
 alias grace='sudo apachectl graceful'
 alias rst="touch tmp/restart.txt && echo touched tmp/restart.txt"  # Passenger
+alias res="touch tmp/restart.txt && echo touched tmp/restart.txt"  # Passenger
 
 alias hosts='sudo vim /etc/hosts'
 
-# Home network
-# On gf's computer, quiet music and disconnect Airfoil from speakers (to free them up for me).
-alias hush="cat ~/.bash/lib/hush.scpt | ssh heli osascript; echo hushed."
-
 # Work
-
-alias akdb='mysqladmin -u root -f drop auktion_development create auktion_development && mysql -u root auktion_development < ~/Downloads/auction_clean.sql && rake db:migrate'
-alias akdbg='scp www-data@sdb:/var/data/auktion/auction_clean.sql ~/Downloads/ && akdb'
 # Use with autologin Greasemonkey script: http://gist.github.com/raw/487186/ccf2c203741c1e39eb45416d02bc58b2728427fc/basefarm_auto.user.js
-alias vpn='open -a Firefox "https://ssl-vpn.sth.basefarm.net/ssl"'
-alias stage='OLD=true BRANCH=master cap staging deploy:migrations'
-alias stagedb='OLD=true BRANCH=master cap staging deploy:import_db'
-
-# Testbot
-alias cpu2='pushd ~/Sites/auktion; rake testbot:runner:set_cpu_cores[2]; popd'
-alias cpu1='pushd ~/Sites/auktion; rake testbot:runner:set_cpu_cores[1]; popd'
-alias cpu0='pushd ~/Sites/auktion; rake testbot:runner:stop; popd'
+alias vpn="open -a Firefox 'https://ssl-vpn.sth.basefarm.net/ssl'; sleep 1; osascript -e 'tell app \"System Events\" to set visible of process \"Firefox\" to false'"
+alias cleanstage='ssh-add &> /dev/null; ssh-agent &> /dev/null; OLD=true cap staging deploy:cleanup BRANCH=master'
+alias reindexstage='ssh-add &> /dev/null; ssh-agent &> /dev/null; OLD=true cap staging deploy:solr:reindex_published BRANCH=master'
+alias importdbstage='ssh-add &> /dev/null; ssh-agent &> /dev/null; OLD=true cap staging deploy:import_db BRANCH=master'
 
 # LiveReload
 alias lr="nohup /usr/bin/rake livereload &> /dev/null &"
+
+# RVM
+alias gsd="rvm gemset delete"
+alias gsc="rvm gemset create"
+alias gsl="rvm gemset list"
+alias gsu="rvm gemset use"
+alias rvu="rvm use"
+
+# Other:
+alias online="ping -c 1 www.sunet.se &> /dev/null && echo 'Online :)' || echo 'Offline :('"
+
