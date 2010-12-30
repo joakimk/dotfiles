@@ -28,13 +28,3 @@ I'm assuming MacVim (`brew install macvim`) and at least Vim 7.
 
 Vim plugins are each their own directory under vim/bundles thanks to [Pathogen](http://www.vim.org/scripts/script.php?script_id=2332).
 
-Most are included in this repository as git submodules, so you need to fetch them after cloning this repository:
-
-    git submodule update --init
-
-The Command-T plugin needs to be compiled:
-
-    cd ~/.vim/bundle/command-t
-    rvm system  # If you use rvm
-    rake make
-

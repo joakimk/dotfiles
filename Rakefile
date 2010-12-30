@@ -8,6 +8,7 @@ def info_rm(text) info(text, "x") end
 desc "Install dotfiles."
 task :install do
   system "git submodule update --init"
+
   Dir["*"].each do |file|
     source = File.join(Dir.pwd, file)
     basename = File.basename(source)
@@ -54,6 +55,14 @@ task :install do
       
     end
 
+  end
+
+  print "Building command-t... "; STDOUT.flush
+  unless system "cd vim/bundle/command-t; rvm use system &> /dev/null; rake make &> /dev/null"
+    puts "fail"
+    puts "Try it manually: cd vim/bundle/command-t; rake make"
+  else
+    puts "ok"
   end
 
 end
