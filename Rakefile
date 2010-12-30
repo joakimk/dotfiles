@@ -8,6 +8,7 @@ def info_rm(text) info(text, "x") end
 desc "Install dotfiles."
 task :install do
   Dir["*"].each do |file|
+    next unless file.include?("vim")
 
     source = File.join(Dir.pwd, file)
     basename = File.basename(source)
