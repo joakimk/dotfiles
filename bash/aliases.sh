@@ -45,7 +45,7 @@ alias sp='script/spork'
 alias spc='script/spork cucumber'
 
 # Git
-alias gl="git log"
+alias gl="git pull"
 alias gs="git status"
 alias gst="git status"
 alias gw="git show"
