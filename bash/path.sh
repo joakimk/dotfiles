@@ -1,3 +1,6 @@
+# Read profile if it exists
+[[ -s "$HOME/.profile" ]] && source "$HOME/.profile"
+
 # Scripts
 export PATH=/Users/jocke/.scripts:/usr/local/bin:$PATH
 
