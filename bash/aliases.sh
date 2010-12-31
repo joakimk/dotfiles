@@ -8,9 +8,9 @@ alias o="open ."  # OS X, open in Finder
 alias text='mvim ~/Dropbox/PlainText'
 
 # Management
-alias dots="mvim ~/Projects/dotfiles"
+alias dots="mvim ~/.dotfiles"
 alias reload='source ~/.bash_profile && echo "sourced ~/.bash_profile"'
-alias redot='cd ~/Projects/dotfiles && rake install; cd -'
+alias redot='cd ~/.dotfiles && git pull && rake; cd -'
 
 # Shell
 alias c='clear'
