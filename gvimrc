@@ -38,7 +38,9 @@ endif
 " Start without the toolbar
 set guioptions-=T
 
-set guifont=Monaco:h12
+if has("gui_macvim")
+  set guifont=Monaco:h12
+endif
 
 " Highlight the current line
 set cursorline
