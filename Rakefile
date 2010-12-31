@@ -4,7 +4,11 @@ def error(text) STDERR.puts "!  #{text}" end
 def info(text, prefix="*") STDOUT.puts "#{prefix}  #{text}" end
 def info_cmd(text) info(text, ">") end
 def info_rm(text) info(text, "x") end
- 
+
+desc "Install dotfiles."
+task :default => :install do
+end
+
 desc "Install dotfiles."
 task :install do
   system "git submodule update --init"
@@ -58,7 +62,9 @@ task :install do
   end
 
   print "Building command-t... "; STDOUT.flush
-  unless system "cd vim/bundle/command-t; rvm use system &> /dev/null; rake make &> /dev/null"
+  has_rvm = system "which rvm 1> /dev/null"
+  build_cmd = "cd vim/bundle/command-t/ruby/command-t; #{has_rvm ? "rvm use system >> /dev/null;" : ""} ruby extconf.rb &> /dev/null && make clean &> /dev/null && make &> /dev/null"
+  unless system(build_cmd)
     puts "fail"
     puts "Try it manually: cd vim/bundle/command-t; rake make"
   else
