@@ -172,3 +172,5 @@ call s:DefineCommand("e", "Edit")
 " Don't show NERDTree when starting
 autocmd VimEnter * NERDTreeClose
 
+" Un-highlight search matches
+nnoremap <leader><leader> :noh<CR>
