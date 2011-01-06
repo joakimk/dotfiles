@@ -13,6 +13,13 @@ rescue LoadError => err
   warn "Couldn't load Wirble: #{err}"
 end
 
+# Allows editing with external editors
+begin
+  require 'interactive_editor'
+rescue LoadError => err
+  warn "Couldn't load interactive_editor: #{err}"
+end
+
 # Quick benchmarking
 # http://stackoverflow.com/questions/123494/whats-your-favourite-irb-trick/123834#123834
 def bench(repetitions=100, &block)
