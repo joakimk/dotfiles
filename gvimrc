@@ -29,9 +29,9 @@ if has("gui_macvim")
 
   " Accordion splits
   " http://www.reddit.com/r/vim/comments/eiolp/accordion_hopping_through_splits/
-  set winminheight=0
-  map <D-Up> <c-w>k<c-w>_
-  map <D-Down> <c-w>j<c-w>_
+  "set winminheight=0
+  "map <D-Up> <c-w>k<c-w>_
+  "map <D-Down> <c-w>j<c-w>_
 
 endif
 
