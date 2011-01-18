@@ -44,7 +44,6 @@ alias tdevp='tdev | egrep "*Parameters"'
 alias tprod='tail -f log/production.log'
 alias sp='script/spork'
 alias spc='script/spork cucumber'
-alias at='autotest -f -c'
 alias rsp='rake testbot:spec'
 alias cup='rake testbot:features'
 
