@@ -1,4 +1,5 @@
 #!/usr/bin/env ruby
+return if $0.include?("macirb")
 
 require "rubygems"
 require "ftools"
