@@ -50,6 +50,7 @@ alias sp='script/spork'
 alias spc='script/spork cucumber'
 alias rsp='rake testbot:spec'
 alias cup='rake testbot:features'
+alias prep='rake db:test:prepare'
 
 # Git
 alias gl="git pull"
