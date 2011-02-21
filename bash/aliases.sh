@@ -12,6 +12,10 @@ alias dots="mvim ~/.dotfiles"
 alias reload='source ~/.bash_profile && echo "sourced ~/.bash_profile"'
 alias redot='cd ~/.dotfiles && git pull && rake; cd -'
 
+# Dropbox projects
+alias mdrop='~/Dropbox/Projects/move_here.sh'
+alias sdrop='~/Dropbox/Projects/symlink.rb'
+
 # Shell
 alias c='clear'
 alias la='ls -alh'
