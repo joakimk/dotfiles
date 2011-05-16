@@ -2,6 +2,7 @@
 alias p="cd ~/Projects"
 alias a="cd ~/Projects/auktion"
 alias pa="cd ~/Projects/auktion"
+alias pav="cd ~/Projects/auktion; vagrant ssh"
 alias tc="cd ~/Projects/testbot_cloud"
 alias t="cd ~/Projects/testbot"
 alias o="open ."  # OS X, open in Finder
