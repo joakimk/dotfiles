@@ -94,9 +94,7 @@ alias hosts='sudo vim /etc/hosts'
 # Work
 # Use with autologin Greasemonkey script: http://gist.github.com/raw/487186/ccf2c203741c1e39eb45416d02bc58b2728427fc/basefarm_auto.user.js
 alias vpn="open -a Firefox 'https://ssl-vpn.sth.basefarm.net/ssl'; sleep 1; osascript -e 'tell app \"System Events\" to set visible of process \"Firefox\" to false'"
-alias cleanstage='ssh-add &> /dev/null; ssh-agent &> /dev/null; OLD=true cap staging deploy:cleanup BRANCH=master'
-alias reindexstage='ssh-add &> /dev/null; ssh-agent &> /dev/null; OLD=true cap staging deploy:solr:reindex_published BRANCH=master'
-alias importdbstage='ssh-add &> /dev/null; ssh-agent &> /dev/null; OLD=true cap staging deploy:import_db BRANCH=master'
+alias vpnagent="sudo killall -9 vpnagentd; sudo nohup /opt/cisco/vpn/bin/vpnagentd -execv_instance &"
 
 # LiveReload
 alias lr="nohup /usr/bin/rake livereload &> /dev/null &"
