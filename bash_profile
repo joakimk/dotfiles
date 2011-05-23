@@ -9,3 +9,8 @@ then
   source ~/Dropbox/Scripts/bash_private.sh
 fi
 
+if [ -f ~/.bdev/profile ]
+then
+  source ~/.bdev/profile
+fi
+
