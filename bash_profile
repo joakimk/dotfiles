@@ -9,8 +9,4 @@ then
   source ~/Dropbox/Scripts/bash_private.sh
 fi
 
-if [ -f ~/.bdev/profile ]
-then
-  source ~/.bdev/profile
-fi
-
+[[ -s "$HOME/.bdev/profile" ]] && source $HOME/.bdev/profile
