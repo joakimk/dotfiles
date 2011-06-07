@@ -54,6 +54,7 @@ alias spc='script/spork cucumber'
 alias rsp='rake testbot:spec'
 alias cup='rake testbot:features'
 alias prep='rake db:test:prepare'
+alias g='bundle exec guard start -n f'
 
 # Git
 alias gl="git pull"
