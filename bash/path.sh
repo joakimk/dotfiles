@@ -1,6 +1,9 @@
 # Read profile if it exists
 [[ -s "$HOME/.profile" ]] && source "$HOME/.profile"
 
+# Bundler bin-stubs
+export PATH=.bundle/bin:$PATH
+
 # Scripts
 export PATH=/Users/jocke/.scripts:/usr/local/bin:$PATH
 
