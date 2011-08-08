@@ -9,5 +9,5 @@ then
   source ~/Dropbox/Scripts/bash_private.sh
 fi
 
-[[ -s "$HOME/.bs/profile" ]] && source "$HOME/.bs/profile"
 [[ -s "$HOME/.bdev/profile" ]] && source "$HOME/.bdev/profile"
+[[ -s "$HOME/.bs/profile" ]] && source "$HOME/.bs/profile"
