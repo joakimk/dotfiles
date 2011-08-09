@@ -54,6 +54,11 @@ let NERDTreeIgnore=['\.rbc$', '\~$']
 let g:CommandTMaxHeight=20
 let g:CommandTMatchWindowAtTop=1
 
+" Reload files changed outside the editor (for example by switching git branch)
+" If a file is changed in two editors, but then only saved in one it will
+" still generate a warning.
+set autoread
+
 " 'Edit anyway' if swap file exists.
 au SwapExists * let v:swapchoice = 'e'
 
