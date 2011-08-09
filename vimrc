@@ -54,6 +54,9 @@ let NERDTreeIgnore=['\.rbc$', '\~$']
 let g:CommandTMaxHeight=20
 let g:CommandTMatchWindowAtTop=1
 
+" 'Edit anyway' if swap file exists.
+au SwapExists * let v:swapchoice = 'e'
+
 " Remember last location in file, but not for commit messages.
 if has("autocmd")
   au BufReadPost * if &filetype !~ 'commit\c' && line("'\"") > 0 && line("'\"") <= line("$")
