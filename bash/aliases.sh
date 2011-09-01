@@ -55,7 +55,7 @@ alias prep='rake db:test:prepare'
 alias g='guard'
 
 # Git
-alias gl="git pull"
+alias gl="git pull --rebase"
 alias gs="git status"
 alias gst="git status"
 alias gw="git show"
