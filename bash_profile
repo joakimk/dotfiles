@@ -9,5 +9,10 @@ then
   source ~/Dropbox/Scripts/bash_private.sh
 fi
 
+if [ -f ~/.bash_local ]
+then
+  source ~/.bash_local
+fi
+
 [[ -s "$HOME/.bdev/profile" ]] && source "$HOME/.bdev/profile"
 [[ -s "$HOME/.bs/profile" ]] && source "$HOME/.bs/profile"
