@@ -156,15 +156,19 @@ nmap <C-Up> [e
 nmap <C-Down> ]e
 " Bubble multiple lines
 vmap <C-Up> [egv
-
 vmap <C-Down> ]egv
+
+" Tab/shift-tab to indent/outdent in visual mode.
+vmap <Tab> >gv
+vmap <S-Tab> <gv
 
 " Directories for swp files
 set backupdir=~/.vim/backup
 set directory=~/.vim/backup
 
-" Leader
+" Leader (both \ and ,)
 "let mapleader = ","
+map , <leader>
 
 " Un-highlight search matches
 nnoremap <leader><leader> :noh<CR>
