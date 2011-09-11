@@ -52,6 +52,7 @@ alias rsp='specjour'
 alias cup='rake testbot:features'
 alias prep='rake db:test:prepare'
 alias g='guard'
+alias f='foreman start'
 
 # Git
 alias gl="git pull --rebase"
