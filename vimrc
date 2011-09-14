@@ -116,7 +116,7 @@ if has("autocmd")
   au FileType python                                   set noexpandtab
 
   " Ruby
-  au BufRead,BufNewFile {Gemfile,Rakefile,Thorfile,config.ru,VagrantFile} set ft=ruby
+  au BufRead,BufNewFile {Gemfile,Rakefile,Thorfile,config.ru,VagrantFile,Guardfile} set ft=ruby
 
   " Javascript
   au BufRead,BufNewFile {*.json} set ft=javascript
