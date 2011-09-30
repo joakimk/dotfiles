@@ -41,6 +41,7 @@ alias ss="[ -f script/server ] && script/server || rails server"
 alias cu='script/cucumber features -b -s -f progress'
 alias cuf='rake features:focus'
 alias rs='rake spec'
+alias rsu='rake spec:unit'
 alias mig='rake db:migrate'
 alias mpr='mate-open app features config lib db/schema.rb db/migrate public spec script/cruise stories test todo.txt script/cron script/oneoff script/app Gemfile'
 alias tdev='tail -n 90 -f log/development.log'
