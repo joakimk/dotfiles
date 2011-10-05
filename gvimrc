@@ -32,6 +32,11 @@ if has("gui_macvim")
   "set winminheight=0
   "map <D-Up> <c-w>k<c-w>_
   "map <D-Down> <c-w>j<c-w>_
+  
+  " Terminal.app shortcuts for tab navigation,
+  " to make Henrik happy.
+  map <D-S-Left> :tabp<CR>
+  map <D-S-Right> :tabn<CR>
 
 endif
 
