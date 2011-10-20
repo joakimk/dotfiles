@@ -52,7 +52,7 @@ alias spc='script/spork cucumber'
 alias rsp='bundle exec specjour'
 alias cup='rake testbot:features'
 alias prep='rake db:test:prepare'
-alias g='guard'
+alias g='bundle exec guard'
 alias f='foreman start'
 
 # Git
