@@ -60,7 +60,7 @@ let g:CommandTMatchWindowAtTop=1
 set autoread
 
 " 'Edit anyway' if swap file exists.
-au SwapExists * let v:swapchoice = 'e'
+" au SwapExists * let v:swapchoice = 'e'
 
 " Remember last location in file, but not for commit messages.
 if has("autocmd")
