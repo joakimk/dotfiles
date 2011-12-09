@@ -53,6 +53,7 @@ let NERDTreeIgnore=['\.rbc$', '\~$']
 " Command-T configuration
 let g:CommandTMaxHeight=20
 let g:CommandTMatchWindowAtTop=1
+set wildignore+=public/uploads
 
 " Reload files changed outside the editor (for example by switching git branch)
 " If a file is changed in two editors, but then only saved in one it will
