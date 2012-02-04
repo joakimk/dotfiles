@@ -53,6 +53,7 @@ alias rsp='bundle exec specjour'
 alias cup='rake testbot:features'
 alias prep='rake db:test:prepare'
 alias g='bundle exec guard'
+alias gu='ONLY_UNIT_TESTS=true guard'
 alias f='foreman start'
 
 # Git
