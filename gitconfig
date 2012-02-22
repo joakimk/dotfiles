@@ -8,3 +8,5 @@
 [alias]
 	standup = shortlog --since=yesterday
 	uncommit = reset --soft HEAD^
+[push]
+	default = current
