@@ -54,8 +54,9 @@ alias cup='rake testbot:features'
 alias prep='rake db:test:prepare'
 alias g='bundle exec guard'
 alias gu='ONLY_UNIT_TESTS=true guard'
-alias f='bundle exec foreman start -f=Procfile.lite'
+alias f='script/foreman'
 alias ff='bundle exec foreman start'
+alias refresh='script/refresh'
 
 # Git
 alias gl="git pull --rebase"
