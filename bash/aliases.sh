@@ -105,4 +105,4 @@ alias rvu="rvm use"
 # Other:
 alias online="ping -c 1 www.sunet.se &> /dev/null && echo 'Online :)' || echo 'Offline :('"
 alias v="vagrant"
-
+alias ta='tmux attach'
