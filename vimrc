@@ -177,6 +177,7 @@ nnoremap <leader><leader> :noh<CR>
 map <leader>n :NERDTreeToggle<CR>
 map <leader>N :NERDTreeFind<CR>" Reveal current file
 
+map <leader>t :CommandT<CR>
 map <leader>T :CommandTFlush<CR>
 
 " Open URL from this line (OS X only).

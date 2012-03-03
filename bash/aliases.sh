@@ -3,10 +3,10 @@ alias p="cd ~/Projects"
 alias o="open ."  # OS X, open in Finder
 
 # http://www.hogbaysoftware.com/products/plaintext
-alias text='mvim ~/Dropbox/PlainText'
+alias text='vim ~/Dropbox/PlainText'
 
 # Management
-alias dots="mvim ~/.dotfiles"
+alias dots="vim ~/.dotfiles"
 alias reload='source ~/.bash_profile && echo "sourced ~/.bash_profile"'
 alias redot='cd ~/.dotfiles && git pull && rake; cd -'
 
@@ -103,4 +103,3 @@ alias rvu="rvm use"
 alias online="ping -c 1 www.sunet.se &> /dev/null && echo 'Online :)' || echo 'Offline :('"
 alias v="vagrant"
 alias ta='tmux attach'
-alias vim='mvim -v'
