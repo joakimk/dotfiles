@@ -3,10 +3,10 @@ alias p="cd ~/Projects"
 alias o="open ."  # OS X, open in Finder
 
 # http://www.hogbaysoftware.com/products/plaintext
-alias text='vim ~/Dropbox/PlainText'
+alias text='cd ~/Dropbox/PlainText; vim'
 
 # Management
-alias dots="vim ~/.dotfiles"
+alias dots="cd ~/.dotfiles; vim"
 alias reload='source ~/.bash_profile && echo "sourced ~/.bash_profile"'
 alias redot='cd ~/.dotfiles && git pull && rake; cd -'
 
