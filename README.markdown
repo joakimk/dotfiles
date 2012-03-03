@@ -26,3 +26,8 @@ I'm assuming MacVim (`brew install macvim`) and at least Vim 7.
 
 Vim plugins are each their own directory under vim/bundles thanks to [Pathogen](http://www.vim.org/scripts/script.php?script_id=2332).
 
+## Exttras
+
+The `extras` directory contains additional configuration files that are not dotfiles:
+
+ * `jellybeans_like_in_mvim.itermcolors` is a colorscheme for [iTerm2](http://www.iterm2.com/) adapted to match the colors in mvim using jellybeans+.
