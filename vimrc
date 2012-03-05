@@ -215,3 +215,9 @@ if getcwd() == "/Users/jocke/Projects/auktion"
   command Loc call EditLocales()
 endif
 
+" Fixes arrow keys when used within tmux
+if &term =~ "screen"
+  let g:CommandTCancelMap     = ['<ESC>', '<C-c>']
+  let g:CommandTSelectNextMap = ['<C-n>', '<C-j>', '<ESC>OB']
+  let g:CommandTSelectPrevMap = ['<C-p>', '<C-k>', '<ESC>OA']
+endif
