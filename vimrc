@@ -10,6 +10,7 @@ call pathogen#helptags()
 
 filetype plugin indent on  " Load plugin and indent settings for the detected filetype.
 syntax on                  " Syntax highlighting.
+set t_Co=256
 color jellybeans+          " Default color scheme.
 set number                 " Show gutter with line numbers.
 set ruler                  " Show line, column and scroll info in status line.
@@ -32,6 +33,16 @@ set list!
 
 " No pipes in vertical split separators.
 set fillchars=vert:\ 
+
+" Diff colors
+" Dark red
+hi DiffText term=reverse cterm=bold ctermbg=88
+" Dark blue
+hi DiffChange term=bold ctermbg=17
+" Dark gray, lighter gray
+hi DiffDelete term=bold ctermbg=234 ctermfg=235
+" Dark green
+hi DiffAdd term=bold ctermbg=22
 
 " Searching.
 set hlsearch    " Highlight results.
@@ -59,6 +70,9 @@ set wildignore+=public/uploads
 " If a file is changed in two editors, but then only saved in one it will
 " still generate a warning.
 set autoread
+
+" Make terminal Vim trigger autoread more often.
+au WinEnter,BufWinEnter,CursorHold * checktime
 
 " 'Edit anyway' if swap file exists.
 au SwapExists * let v:swapchoice = 'e'

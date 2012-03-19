@@ -10,3 +10,9 @@
 	uncommit = reset --soft HEAD^
 [push]
 	default = current
+[merge]
+	tool = vimdiff
+
+[mergetool "vimdiff"]
+	cmd = vim -d "$LOCAL" "$MERGED" "$REMOTE"
+	trustExitCode = true
