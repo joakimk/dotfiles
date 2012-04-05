@@ -23,6 +23,8 @@ export PATH=/Applications/STk/bin:$PATH
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" 
 
 # autojump
-if [ -f `brew --prefix`/etc/autojump ]; then
-  . `brew --prefix`/etc/autojump
+if which brew >/dev/null; then
+  if [ -f `brew --prefix`/etc/autojump ]; then
+    . `brew --prefix`/etc/autojump
+  fi
 fi
