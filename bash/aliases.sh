@@ -103,3 +103,4 @@ alias rvu="rvm use"
 alias online="ping -c 1 www.sunet.se &> /dev/null && echo 'Online :)' || echo 'Offline :('"
 alias v="vagrant"
 alias ta='tmux attach'
+alias to='teamocil --here'
