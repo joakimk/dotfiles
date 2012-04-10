@@ -182,9 +182,8 @@ vmap <S-Tab> <gv
 set backupdir=~/.vim/backup
 set directory=~/.vim/backup
 
-" Leader (both \ and ,)
-"let mapleader = ","
-map , <leader>
+" Leader
+let mapleader = ","
 
 " Un-highlight search matches
 nnoremap <leader><leader> :noh<CR>
