@@ -167,6 +167,12 @@ noremap <Down> gj
 noremap k gk
 noremap j gj
 
+" Seriously, why isn't this set by default
+cmap WQ wq
+cmap Wq wq
+cmap W w
+cmap Q q
+
 " Bubble single lines
 nmap <C-Up> [e
 nmap <C-Down> ]e
