@@ -137,6 +137,9 @@ if has("autocmd")
   " Javascript
   au BufRead,BufNewFile {*.json} set ft=javascript
 
+  " Javascript haml templates
+  au BufRead,BufNewFile {*.jst.hamlc} set ft=haml
+
   " md, markdown, and mk are markdown and define buffer-local preview
   au BufRead,BufNewFile *.{md,markdown,mdown,mkd,mkdn} call s:setupMarkup()
 
