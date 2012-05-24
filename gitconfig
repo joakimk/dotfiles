@@ -8,6 +8,7 @@
 [alias]
 	standup = shortlog --since=yesterday
 	uncommit = reset --soft HEAD^
+        l = "!source ~/.githelpers && pretty_git_log"
 [push]
 	default = current
 [merge]
@@ -16,3 +17,4 @@
 [mergetool "vimdiff"]
 	cmd = vim -d "$LOCAL" "$MERGED" "$REMOTE"
 	trustExitCode = true
+
