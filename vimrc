@@ -31,6 +31,9 @@ set expandtab
 set listchars=nbsp:·,tab:▸\ ,trail:·
 set list!
 
+" Highlight current line
+set cursorline
+
 " No pipes in vertical split separators.
 set fillchars=vert:\ 
 
