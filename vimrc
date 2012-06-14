@@ -50,8 +50,11 @@ hi DiffAdd term=bold ctermbg=22
 " Searching.
 set hlsearch    " Highlight results.
 set incsearch   " Search-as-you-type.
-set ignorecase  " Case-insensitive…
-set smartcase   " …unless phrase includes uppercase.
+
+" Case insensitve search/replace is not productive
+"set ignorecase  " Case-insensitive…
+"set smartcase   " …unless phrase includes uppercase.
+
 set gdefault    " Global search by default; /g for first-per-row only.
 
 set nojoinspaces                " 1 space, not 2, when joining sentences.
