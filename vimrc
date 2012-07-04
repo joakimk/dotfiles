@@ -32,7 +32,8 @@ set listchars=nbsp:·,tab:▸\ ,trail:·
 set list!
 
 " Highlight current line
-set cursorline
+" Makes vip take 100% and slow down in some files.
+"set cursorline
 
 " No pipes in vertical split separators.
 set fillchars=vert:\ 
@@ -72,6 +73,10 @@ let g:CommandTMaxHeight=20
 let g:CommandTMatchWindowAtTop=1
 set wildignore+=public/uploads
 set wildignore+=tmp/
+
+" Workaround 'E854: path too long for completion' for now
+" http://stackoverflow.com/questions/9590658/vim-e854-path-too-long-for-completion
+set complete-=i
 
 " Reload files changed outside the editor (for example by switching git branch)
 " If a file is changed in two editors, but then only saved in one it will
