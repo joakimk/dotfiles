@@ -236,6 +236,9 @@ nmap <leader><down>   :rightbelow sp<CR>
 let g:NERDCreateDefaultMappings=0
 map <leader>c <Plug>NERDCommenterToggle
 
+" Use nearest split and not a new one
+let g:VimuxUseNearestPane = 1
+
 " Define some stuff only when launched in this given project.
 if getcwd() == "/Users/jocke/Projects/auktion"
   " :Loc to open locales in splits in a tab.
