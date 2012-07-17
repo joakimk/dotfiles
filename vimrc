@@ -244,8 +244,10 @@ let g:no_turbux_mappings = 1
 map <leader>m <Plug>SendTestToTmux
 map <leader>M <Plug>SendFocusedTestToTmux
 
-" Trying out this too, can't get used to henriks <leader><shift>m thing.
+" Trying out different mappings, can't get used to henriks <leader><shift>m thing.
 map <leader>l <Plug>SendFocusedTestToTmux
+map m <Plug>SendFocusedTestToTmux
+map M <Plug>SendTestToTmux
 
 " Be able to run some code to decide how to run a spec (with or without drb, etc)
 let g:turbux_command_rspec = 'script/turbux_rspec'
