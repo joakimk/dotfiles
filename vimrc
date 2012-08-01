@@ -222,6 +222,15 @@ map <leader>q :cclose<CR>
 map - :cprev<CR> :norm! zz<CR>" Previous fix and center line.
 map + :cnext<CR> :norm! zz<CR>" Next fix and center line.
 
+" Simper on an english keyboard layout (but I want to keep
+" the swedish mapping for pairing)
+map = :cnext<CR> :norm! zz<CR>" Next fix and center line.
+
+" Center line in previous/next file.
+map g- :cpfile<CR> zz
+map g+ :cnfile<CR> zz
+map g= :cnfile<CR> zz
+
 " Opens an edit command with the path of the currently edited file filled in
 map <leader>e :e <C-R>=expand("%:p:h") . "/" <CR>
 
