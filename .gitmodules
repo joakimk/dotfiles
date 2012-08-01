@@ -94,3 +94,6 @@
 [submodule "vim/bundle/git-grep-vim"]
 	path = vim/bundle/git-grep-vim
 	url = http://github.com/henrik/git-grep-vim.git
+[submodule "vim/bundle/vim-qargs"]
+	path = vim/bundle/vim-qargs
+	url = https://github.com/henrik/vim-qargs.git
