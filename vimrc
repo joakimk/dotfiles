@@ -249,6 +249,10 @@ map <leader>l <Plug>SendFocusedTestToTmux
 map m <Plug>SendFocusedTestToTmux
 map M <Plug>SendTestToTmux
 
+" GitGrep mapped to ,a
+" http://henrik.nyh.se/2012/07/project-wide-search-and-replace-in-vim-with-qdo/
+exe "nnoremap <leader>a :GitGrep "
+
 " Be able to run some code to decide how to run a spec (with or without drb, etc)
 let g:turbux_command_rspec = 'script/turbux_rspec'
 
