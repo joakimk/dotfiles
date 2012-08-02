@@ -83,6 +83,10 @@ set complete-=i
 " still generate a warning.
 set autoread
 
+" Automatically save changes before switching buffer with some
+" commands, like :cnfile.
+set autowrite
+
 " Make terminal Vim trigger autoread more often.
 au WinEnter,BufWinEnter,CursorHold * checktime
 
