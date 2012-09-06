@@ -73,6 +73,7 @@ alias go="git checkout"
 alias gb="git checkout -b --color"
 alias gba='git branch -a --color'
 alias gp='git push'
+alias gps='git stash && gpp && git stash pop'
 alias gpp='git pull --rebase && git push'
 alias gcp="git cherry-pick"
 alias gm='git merge'
