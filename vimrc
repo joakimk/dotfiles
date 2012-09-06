@@ -36,7 +36,7 @@ set list!
 "set cursorline
 
 " No pipes in vertical split separators.
-set fillchars=vert:\ 
+set fillchars=vert:\
 
 " Diff colors
 " Dark red
@@ -92,6 +92,14 @@ au WinEnter,BufWinEnter,CursorHold * checktime
 
 " 'Edit anyway' if swap file exists.
 au SwapExists * let v:swapchoice = 'e'
+
+" Highlight trailing whitespace
+highlight ExtraWhitespace ctermbg=red guibg=red
+match ExtraWhitespace /\s\+$/
+autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
+autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
+autocmd InsertLeave * match ExtraWhitespace /\s\+$/
+autocmd BufWinLeave * call clearmatches()
 
 " Remember last location in file, but not for commit messages.
 if has("autocmd")
