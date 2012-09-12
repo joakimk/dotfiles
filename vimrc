@@ -270,6 +270,11 @@ map <leader>l <Plug>SendFocusedTestToTmux
 map m <Plug>SendFocusedTestToTmux
 map M <Plug>SendTestToTmux
 
+" Control rubymotion from vim
+map <Leader>q :call VimuxRunCommand("quit")<CR>
+map <Leader>w :call VimuxRunCommand("clear; rake simulator")<CR>
+map <Leader>e :call VimuxRunCommand("clear; rake device")<CR>
+
 " GitGrep mapped to ,a
 " http://henrik.nyh.se/2012/07/project-wide-search-and-replace-in-vim-with-qdo/
 exe "nnoremap <leader>a :GitGrep "
