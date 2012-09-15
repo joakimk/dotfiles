@@ -271,7 +271,7 @@ map m <Plug>SendFocusedTestToTmux
 map M <Plug>SendTestToTmux
 
 " Control rubymotion from vim
-map <Leader>q :call VimuxRunCommand("quit")<CR>
+map <Leader>q :call VimuxInterruptRunner()<CR>
 map <Leader>w :call VimuxRunCommand("clear; rake simulator")<CR>
 map <Leader>e :call VimuxRunCommand("clear; rake device")<CR>
 
