@@ -243,8 +243,8 @@ map g- :cpfile<CR> zz
 map g+ :cnfile<CR> zz
 map g= :cnfile<CR> zz
 
-" Opens an edit command with the path of the currently edited file filled in
-map <leader>e :e <C-R>=expand("%:p:h") . "/" <CR>
+" Reload vim config
+map <Leader>r :source $MYVIMRC<CR>
 
 " Create a split on the given side.
 " From http://technotales.wordpress.com/2010/04/29/vim-splits-a-guide-to-doing-exactly-what-you-want/ via joakimk.
