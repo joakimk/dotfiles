@@ -55,7 +55,7 @@ alias g='bundle exec guard'
 alias gu='ONLY_UNIT_TESTS=true guard'
 alias f='script/foreman'
 alias ff='bundle exec foreman start'
-alias refresh='script/refresh'
+alias refresh='script/refresh_and_start_background_jobs'
 
 # Git
 alias gl="git pull --rebase"
