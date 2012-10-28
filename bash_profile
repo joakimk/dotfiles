@@ -14,5 +14,7 @@ then
   source ~/.bash_local
 fi
 
-[[ -s "$HOME/.bdev/profile" ]] && source "$HOME/.bdev/profile"
 [[ -s "$HOME/.bs/profile" ]] && source "$HOME/.bs/profile"
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
