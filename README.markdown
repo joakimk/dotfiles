@@ -32,3 +32,7 @@ The `extras` directory contains additional configuration files that are not dotf
 
  * `jellybeans_like_in_mvim.itermcolors` is a colorscheme for [iTerm2](http://www.iterm2.com/) adapted to match the colors in mvim using jellybeans+.
    - Also set xterm-256color to get the right colors in tmux (brew install tmux). Unlimited scrollback, uncheck lion style fullscreen.
+
+## OSX
+
+  * Clipboard history: http://www.macupdate.com/app/mac/27135/clipper
