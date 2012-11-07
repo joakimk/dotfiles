@@ -31,4 +31,4 @@ Vim plugins are each their own directory under vim/bundles thanks to [Pathogen](
 The `extras` directory contains additional configuration files that are not dotfiles:
 
  * `jellybeans_like_in_mvim.itermcolors` is a colorscheme for [iTerm2](http://www.iterm2.com/) adapted to match the colors in mvim using jellybeans+.
- * Also set xterm-256color to get the right colors in tmux (brew install tmux). Unlimited scrollback, uncheck lion style fullscreen.
+   - Also set xterm-256color to get the right colors in tmux (brew install tmux). Unlimited scrollback, uncheck lion style fullscreen.
