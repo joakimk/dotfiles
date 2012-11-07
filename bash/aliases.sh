@@ -46,8 +46,7 @@ alias tprod='tail -f log/production.log'
 alias rsp='rake testbot:spec'
 alias prep='rake db:test:prepare'
 alias g='bundle exec guard'
-alias f='script/foreman'
-alias ff='bundle exec foreman start'
+alias f='script/foreman_turbux'
 alias refresh='script/refresh_and_start_background_jobs'
 
 # Git
