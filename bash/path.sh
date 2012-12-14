@@ -8,7 +8,7 @@ export PATH=.bundle/bin:$PATH
 export PATH=bin:$PATH
 
 # Scripts
-export PATH=/Users/jocke/.scripts:/usr/local/bin:$PATH
+export PATH=$HOME/.scripts:/usr/local/bin:$PATH
 
 # Python
 export PATH=/usr/local/Cellar/python/2.6.5/bin:$PATH
