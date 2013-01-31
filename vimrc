@@ -196,8 +196,10 @@ noremap j gj
 " Seriously, why isn't this set by default
 cmap WQ wq
 cmap Wq wq
-cmap W w
-cmap Q q
+
+" If you set these, you can never search for /W.. and /Q..
+"cmap W w
+"cmap Q q
 
 " Bubble single lines
 nmap <C-Up> [e
