@@ -71,9 +71,21 @@ let NERDTreeIgnore=['\.rbc$', '\~$']
 " Command-T configuration
 let g:CommandTMaxHeight=20
 let g:CommandTMatchWindowAtTop=1
+
+" Ctrl-P
+let g:ctrlp_match_window_bottom = 0
+let g:ctrlp_match_window_reversed = 0
+let g:ctrlp_max_height = 20
+let g:ctrlp_show_hidden = 0
+let g:ctrlp_max_files = 0
+let g:ctrlp_switch_buffer = 0
+
+" Files to skip.
+" Possibly used by other plugins, like Command-T.
+set wildignore+=*.o,*.obj,.git,tmp
+set wildignore+=public/uploads,db/sphinx,vim/backup
 set wildignore+=public/uploads
 set wildignore+=tmp/
-set wildignore+=vendor/appenv/vendor/appenv
 
 " Workaround 'E854: path too long for completion' for now
 " http://stackoverflow.com/questions/9590658/vim-e854-path-too-long-for-completion
@@ -197,8 +209,6 @@ noremap j gj
 " Seriously, why isn't this set by default
 cmap WQ wq
 cmap Wq wq
-
-" If you set these, you can never search for /W.. and /Q..
 "cmap W w
 "cmap Q q
 
