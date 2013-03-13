@@ -58,17 +58,5 @@ task :install do
       info_cmd "ln -s #{source} #{destination}"
       
     end
-
   end
-
-  print "Building command-t... "; STDOUT.flush
-  has_rvm = system "which rvm 1> /dev/null"
-  build_cmd = "cd vim/bundle/command-t/ruby/command-t; #{has_rvm ? "rvm use system >> /dev/null;" : ""} ruby extconf.rb > /dev/null && make clean > /dev/null && make > /dev/null"
-  unless system(build_cmd)
-    puts "fail"
-    puts "Try it manually: cd vim/bundle/command-t; rake make"
-  else
-    puts "ok"
-  end
-
 end

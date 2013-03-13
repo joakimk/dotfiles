@@ -81,7 +81,6 @@ let g:ctrlp_max_files = 0
 let g:ctrlp_switch_buffer = 0
 
 " Files to skip.
-" Possibly used by other plugins, like Command-T.
 set wildignore+=*.o,*.obj,.git,tmp
 set wildignore+=public/uploads,db/sphinx,vim/backup
 set wildignore+=public/uploads
@@ -236,9 +235,6 @@ nnoremap <leader><leader> :noh<CR>
 map <leader>n :NERDTreeToggle<CR>
 map <leader>N :NERDTreeFind<CR>" Reveal current file
 
-map <leader>t :CommandT<CR>
-map <leader>T :CommandTFlush<CR>
-
 " Open URL from this line (OS X only).
 map <leader>u :call OpenURI()<CR>
 
@@ -273,10 +269,13 @@ map <leader>c <Plug>NERDCommenterToggle
 " Use nearest split and not a new one
 let g:VimuxUseNearestPane = 1
 
-" Remap turbux to now collide with command-t
+" Remap turbux to not collide with ctrlp
 let g:no_turbux_mappings = 1
 map <leader>m <Plug>SendTestToTmux
 map <leader>M <Plug>SendFocusedTestToTmux
+
+" Support command-t style shortcuts for a while
+map <leader>t :CtrlP<CR>
 
 " Trying out different mappings, can't get used to henriks <leader><shift>m thing.
 map <leader>l <Plug>SendFocusedTestToTmux
