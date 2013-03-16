@@ -32,7 +32,7 @@ elif ls -G -d . >/dev/null 2>&1; then
 fi
 
 # Ruby on Rails
-alias sc='(ps ax|grep rails_console|grep SCREEN 1> /dev/null) && script/join_rails_console_screen || ([ -f script/console ] && script/console || bundle exec rails console)'
+alias sc='(ls .zeus.sock > /dev/null) && zeus c || ([ -f script/console ] && script/console || bundle exec rails console)'
 alias sdb="[ -f script/dbconsole ] && script/console --include-password || bundle exec rails dbconsole --include-password"
 alias ss="[ -f script/server ] && script/server || rails server"
 alias rs='rake spec'
