@@ -314,3 +314,7 @@ if &term =~ "screen"
   let g:CommandTSelectNextMap = ['<C-n>', '<C-j>', '<ESC>OB']
   let g:CommandTSelectPrevMap = ['<C-p>', '<C-k>', '<ESC>OA']
 endif
+
+" Support .slimbars (handlebars templates using slim)
+autocmd BufNewFile,BufRead *.slimbars set filetype=slimbars
+autocmd FileType slimbars set tabstop=2|set shiftwidth=2|set expandtab
