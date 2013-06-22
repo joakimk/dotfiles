@@ -58,7 +58,7 @@ alias gd="git diff"  # What's changed but not yet added?
 alias gdc="git diff --cached"  # What's added but not yet committed?
 alias ga='git add'
 alias gc="git commit -v -a"
-alias gca="git commit -v -a"
+# For gca, see functions.sh
 alias gam="git commit --amend"
 alias gco="git checkout"
 alias go="git checkout"

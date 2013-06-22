@@ -52,3 +52,11 @@ function xc {
 function migg {
   script/generate migration $@ | ruby -e 'x = ARGF.read; puts x; path = x[/create\s+(.+)/, 1]; system("open", path)'
 }
+
+# "git commit all"
+# Commits all changes, deletions and additions.
+# When given an argument, uses that for a message.
+# With no argument, opens an editor that also shows the diff (-v).
+function gca {
+  git add --all && ([ -z "$1" ] && git commit -v || git commit -m "$1")
+}
