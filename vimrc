@@ -178,6 +178,9 @@ if has("autocmd")
   " md, markdown, and mk are markdown and define buffer-local preview
   au BufRead,BufNewFile *.{md,markdown,mdown,mkd,mkdn} call s:setupMarkup()
 
+  " arduino source files
+  au BufRead,BufNewFile {*.pde} set ft=cpp
+
   " Uncomment to have txt files hard-wrap automatically.
   "au BufRead,BufNewFile *.txt call s:setupWrapping()
 endif
