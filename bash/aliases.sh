@@ -59,6 +59,7 @@ alias gdc="git diff --cached"  # What's added but not yet committed?
 alias ga='git add'
 alias gc="git commit -v -a"
 # For gca, see functions.sh
+alias gcac="git commit -a -m 'Cleanup'"
 alias gam="git commit --amend"
 alias gco="git checkout"
 alias go="git checkout"
