@@ -298,19 +298,6 @@ exe "nnoremap <leader>d :Qdo "
 " Be able to run some code to decide how to run a spec (with or without drb, etc)
 let g:turbux_command_rspec = 'script/turbux_rspec'
 
-" Define some suff only when launched in this given project.
-if getcwd() == "/Users/jocke/Projects/auktion"
-  " :Loc to open locales in splits in a tab.
-  if !exists("*EditLocales")
-    function! EditLocales()
-      tabe config/locales/fi.yml
-      vsp  config/locales/en.yml
-      vsp  config/locales/sv.yml
-    endfunction
-  endif
-  command Loc call EditLocales()
-endif
-
 " Fixes arrow keys when used within tmux
 if &term =~ "screen"
   let g:CommandTCancelMap     = ['<ESC>', '<C-c>']
