@@ -290,6 +290,9 @@ map <Leader>q :call VimuxInterruptRunner()<CR>
 map <Leader>w :call VimuxRunCommand("clear; rake simulator")<CR>
 map <Leader>e :call VimuxRunCommand("clear; rake device")<CR>
 
+" Run default rake task with "§" (usually runs all tests)
+map § :call VimuxRunCommand("rake")<CR>
+
 " GitGrep mapped to ,a
 " http://henrik.nyh.se/2012/07/project-wide-search-and-replace-in-vim-with-qdo/
 exe "nnoremap <leader>a :GitGrep "
