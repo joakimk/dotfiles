@@ -85,6 +85,7 @@ set wildignore+=*.o,*.obj,.git,tmp
 set wildignore+=public/uploads,db/sphinx,vim/backup
 set wildignore+=public/uploads
 set wildignore+=tmp/
+set wildignore+=data/
 
 " Workaround 'E854: path too long for completion' for now
 " http://stackoverflow.com/questions/9590658/vim-e854-path-too-long-for-completion
