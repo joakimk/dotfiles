@@ -296,6 +296,11 @@ map <Leader>q :call VimuxInterruptRunner()<CR>
 map <Leader>w :call VimuxRunCommand("clear; rake simulator")<CR>
 map <Leader>e :call VimuxRunCommand("clear; rake device")<CR>
 
+" Map ctrl-s to save
+nmap <c-s> :w<CR>
+imap <c-s> <Esc>:w<CR>a
+imap <c-s> <Esc><c-s>
+
 " Run default rake task with "§" (usually runs all tests)
 map § :call VimuxRunCommand("rake")<CR>
 
