@@ -47,7 +47,7 @@ alias rsp='rake testbot:spec'
 alias prep='rake db:test:prepare'
 alias g='bundle exec guard'
 alias f='script/foreman_turbux'
-alias refresh='script/refresh_and_start_background_jobs'
+alias ref='script/refresh'
 
 # Git
 alias gl="git pull --rebase"
