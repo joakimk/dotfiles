@@ -27,6 +27,9 @@ set softtabstop=2
 set shiftwidth=2
 set expandtab
 
+" Autoindent with =
+set autoindent
+
 " Show invisibles.
 set listchars=nbsp:·,tab:▸\ ,trail:·
 set list!
@@ -251,10 +254,6 @@ map <leader>u :call OpenURI()<CR>
 map <leader>q :cclose<CR>
 map - :cprev<CR> :norm! zz<CR>" Previous fix and center line.
 map + :cnext<CR> :norm! zz<CR>" Next fix and center line.
-
-" Simper on an english keyboard layout (but I want to keep
-" the swedish mapping for pairing)
-map = :cnext<CR> :norm! zz<CR>" Next fix and center line.
 
 " Center line in previous/next file.
 map g- :cpfile<CR> zz
