@@ -303,8 +303,8 @@ imap <c-s> <Esc><c-s>
 " Run default rake task with "§" (usually runs all tests)
 map § :call VimuxRunCommand("rake")<CR>
 
-" Stop commands with 1 (right next to $)
-map 1 :call VimuxInterruptRunner()<CR>
+" Stop commands with <leader>§
+map <leader>§ :call VimuxInterruptRunner()<CR>
 
 " GitGrep mapped to ,a
 " http://henrik.nyh.se/2012/07/project-wide-search-and-replace-in-vim-with-qdo/
