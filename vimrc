@@ -279,7 +279,9 @@ let g:VimuxUseNearestPane = 1
 
 " Remap turbux to not collide with ctrlp
 let g:no_turbux_mappings = 1
+
 map <leader>m <Plug>SendTestToTmux
+
 map <leader>M <Plug>SendFocusedTestToTmux
 
 " Support command-t style shortcuts for a while
@@ -300,8 +302,12 @@ nmap <c-s> :w<CR>
 imap <c-s> <Esc>:w<CR>a
 imap <c-s> <Esc><c-s>
 
-" Run default rake task with "§" (usually runs all tests)
-map § :call VimuxRunCommand("rake")<CR>
+" Run default task with "§" (usually runs all tests)
+if filereadable("mix.exs")
+  map § :call VimuxRunCommand("mix test")<CR>
+else
+  map § :call VimuxRunCommand("rake")<CR>
+endif
 
 " Stop commands with <leader>§
 map <leader>§ :call VimuxInterruptRunner()<CR>
