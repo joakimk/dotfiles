@@ -318,7 +318,7 @@ exe "nnoremap <leader>a :GitGrep "
 exe "nnoremap <leader>d :Qdo "
 
 " Be able to run some code to decide how to run a spec (with or without drb, etc)
-let g:turbux_command_rspec = 'script/turbux_rspec'
+let g:turbux_command_rspec = 'script/test'
 
 " Fixes arrow keys when used within tmux
 if &term =~ "screen"
