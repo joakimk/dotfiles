@@ -46,9 +46,6 @@
 [submodule "vim/bundle/vim-unimpaired"]
 	path = vim/bundle/vim-unimpaired
 	url = git://github.com/tpope/vim-unimpaired.git
-[submodule "vim/bundle/vim-rspec"]
-	path = vim/bundle/vim-rspec
-	url = git://github.com/taq/vim-rspec.git
 [submodule "vim/bundle/vim-markdown-preview"]
 	path = vim/bundle/vim-markdown-preview
 	url = git://github.com/henrik/vim-markdown-preview.git
