@@ -63,7 +63,6 @@ alias gc="git commit -v -a"
 alias gcac="git commit -a -m 'Cleanup'"
 alias gam="git commit --amend"
 alias gco="git checkout"
-alias go="git checkout"
 alias gb="git checkout -b --color"
 alias gba='git branch -a --color'
 alias gp='git push'
