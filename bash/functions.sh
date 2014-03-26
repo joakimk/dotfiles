@@ -58,5 +58,10 @@ function migg {
 # When given an argument, uses that for a message.
 # With no argument, opens an editor that also shows the diff (-v).
 function gca {
-  git add --all && ([ -z "$1" ] && git commit -v || git commit -m "$1")
+  git add --all && (
+    if [ -z "$1" ]; then
+      git commit -v
+    else
+      git commit -m "$1"
+    fi)
 }
