@@ -4,9 +4,6 @@
 # Bundler bin-stubs
 export PATH=.bundle/bin:$PATH
 
-# Useful for running bins within a project
-export PATH=bin:$PATH
-
 # Scripts
 export PATH=$HOME/.scripts:/usr/local/bin:$PATH
 
