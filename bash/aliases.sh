@@ -74,7 +74,7 @@ alias gbt='git branch --track' # stubs origin/stubs
 alias mim='mergeinmaster'
 alias grb='git-remote-branch'
 alias stats='git shortlog -s -n'
-alias emptycommit='git commit --allow-empty -m "Empty commit"'
+alias emptycommit='git commit --allow-empty -v'
 
 # Xcode versioning
 # http://www.blog.montgomerie.net/easy-iphone-application-versioning-with-agvtool
