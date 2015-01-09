@@ -346,3 +346,20 @@ function! s:ShouldToExpect()
 endfunction
 
 command! -range Expect execute '<line1>,<line2>call <SID>ShouldToExpect()'
+
+" Experimental use of external commands for automating some dev tasks
+"
+" Example
+"   :Dev gen app/models/train.rb
+"
+function! s:Dev(args)
+    " Hardcoded until it needs to be autodetected or specified
+    let language = "ruby"
+
+    " NOTE: Hardcoded erlang path for now (the script is implemented in elixir)
+    silent execute "!PATH=$PATH:~/dependencies/erlang/bin /Users/jocke/Projects/shared/devtools/devtools " . language . " " . a:args
+    execute ":CtrlPClearCache"
+    exec "redraw!"
+endfunction
+
+command! -nargs=* -complete=file Dev call s:Dev(<q-args>)
