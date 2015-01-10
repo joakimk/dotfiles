@@ -66,37 +66,37 @@
 	url = git://github.com/godlygeek/tabular.git
 [submodule "vim/bundle/vim-ruby-runner"]
 	path = vim/bundle/vim-ruby-runner
-	url = https://github.com/henrik/vim-ruby-runner.git
+	url = git://github.com/henrik/vim-ruby-runner.git
 [submodule "vim/bundle/vim-coffee-script"]
 	path = vim/bundle/vim-coffee-script
-	url = https://github.com/kchmck/vim-coffee-script.git
+	url = git://github.com/kchmck/vim-coffee-script.git
 [submodule "vim/bundle/vim-yaml-flattener"]
 	path = vim/bundle/vim-yaml-flattener
-	url = https://github.com/henrik/vim-yaml-flattener.git
+	url = git://github.com/henrik/vim-yaml-flattener.git
 [submodule "vim/bundle/vimux"]
 	path = vim/bundle/vimux
-	url = https://github.com/benmills/vimux.git
+	url = git://github.com/benmills/vimux.git
 [submodule "vim/bundle/vim-turbux"]
 	path = vim/bundle/vim-turbux
-	url = https://github.com/barsoom/vim-turbux.git
+	url = git://github.com/barsoom/vim-turbux.git
 [submodule "vim/bundle/git-grep-vim"]
 	path = vim/bundle/git-grep-vim
-	url = http://github.com/henrik/git-grep-vim.git
+	url = git://github.com/henrik/git-grep-vim.git
 [submodule "vim/bundle/vim-qargs"]
 	path = vim/bundle/vim-qargs
-	url = https://github.com/henrik/vim-qargs.git
+	url = git://github.com/henrik/vim-qargs.git
 [submodule "vim/bundle/vim-elixir"]
 	path = vim/bundle/vim-elixir
-	url = https://github.com/elixir-lang/vim-elixir.git
+	url = git://github.com/elixir-lang/vim-elixir.git
 [submodule "vim/bundle/ctrlp.vim"]
 	path = vim/bundle/ctrlp.vim
-	url = https://github.com/kien/ctrlp.vim.git
+	url = git://github.com/kien/ctrlp.vim.git
 [submodule "vim/bundle/vim-slim"]
 	path = vim/bundle/vim-slim
 	url = git@github.com:slim-template/vim-slim.git
 [submodule "vim/bundle/vim-golang"]
 	path = vim/bundle/vim-golang
-	url = https://github.com/jnwhiteh/vim-golang.git
+	url = git://github.com/jnwhiteh/vim-golang.git
 [submodule "vim/bundle/vim-endwise"]
 	path = vim/bundle/vim-endwise
-	url = http://github.com/tpope/vim-endwise.git
+	url = git://github.com/tpope/vim-endwise.git
