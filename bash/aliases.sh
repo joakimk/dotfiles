@@ -62,6 +62,7 @@ alias gc="git commit -v -a"
 # For gca, see functions.sh
 alias gcac="git commit -a -m 'Cleanup'"
 alias gam="git commit --amend"
+alias gamm="git add --all && git commit --amend -C HEAD"
 alias gco="git checkout"
 alias gb="git checkout -b --color"
 alias gba='git branch -a --color'
