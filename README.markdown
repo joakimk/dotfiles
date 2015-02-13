@@ -2,6 +2,7 @@
 
 ## Install
 
+    # deps on ubuntu: sudo apt-get install ruby rake -y
     git clone git://github.com/joakimk/dotfiles.git ~/.dotfiles && cd ~/.dotfiles && rake
 
 This rake task will not replace existing files, but it will replace existing symlinks.
