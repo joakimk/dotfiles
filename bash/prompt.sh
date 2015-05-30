@@ -6,7 +6,9 @@
 # jocke@server project_dir ree-1.8.7@project master*$
 
 function __rvm_prompt {
-  if hash rvm-prompt 2>&- ; then
+  if [ -f mix.exs ]; then
+    echo " elixir-$(elixir -v|awk '{ print $2 }')"
+  elif hash rvm-prompt 2>&- ; then
     echo " `rvm-prompt i v g s`"
   fi
 }
