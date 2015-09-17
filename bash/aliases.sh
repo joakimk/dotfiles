@@ -32,9 +32,9 @@ elif ls -G -d . >/dev/null 2>&1; then
 fi
 
 # Ruby on Rails
-alias sc='(ls .zeus.sock 1> /dev/null 2> /dev/null) && zeus c || ([ -f script/console ] && script/console || bundle exec rails console)'
+alias sc='bundle exec rails console'
+alias ss='bundle exec rails server'
 alias sdb="[ -f script/dbconsole ] && script/console --include-password || bundle exec rails dbconsole --include-password"
-alias ss="[ -f script/server ] && script/server || rails server"
 alias rs='rake spec'
 alias rsu='rake spec:unit'
 alias rsua='rake spec:unit:all'
@@ -106,3 +106,6 @@ alias to='teamocil --here'
 alias paira="git config user.pair 'AR+JK' && git config user.name 'Albert Ramstedt and Joakim Kolsjö' && git config user.email 'all+albert+jocke@barsoom.se'; pair"
 alias pairk="git config user.pair 'JK+KP' && git config user.name 'Joakim Kolsjö and Kim Persson' && git config user.email 'all+jocke+kim@barsoom.se'; pair"
 alias pairt="git config user.pair 'JK+TS' && git config user.name 'Joakim Kolsjö and Tomas Skogberg' && git config user.email 'all+jocke+tomas@barsoom.se'; pair"
+alias pairv="git config user.pair 'JK+VA' && git config user.name 'Joakim Kolsjö and Victor Arias' && git config user.email 'all+jocke+victor@barsoom.se'; pair"
+alias pairf="git config user.pair 'FH+JK' && git config user.name 'Joakim Kolsjö and Fabian Hoffmann' && git config user.email 'all+fabian+jocke@barsoom.se'; pair"
+alias pairl="git config user.pair 'JK+LF' && git config user.name 'Joakim Kolsjö and Lennart Fridén' && git config user.email 'all+jocke+lennart@barsoom.se'; pair"
