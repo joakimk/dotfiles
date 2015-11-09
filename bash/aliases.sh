@@ -31,8 +31,9 @@ elif ls -G -d . >/dev/null 2>&1; then
   alias ls='ls -G'  # BSD/OS X
 fi
 
-# General purpose console alias
+# General purpose console aliases
 alias co='[ -e mix.exs ] && iex -S mix || bundle exec rails console'
+alias hco="heroku run '[ -e mix.exs ] && iex -S mix || bundle exec rails console'"
 
 # Ruby on Rails
 alias sc='bundle exec rails console'
