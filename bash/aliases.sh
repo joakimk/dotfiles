@@ -31,9 +31,10 @@ elif ls -G -d . >/dev/null 2>&1; then
   alias ls='ls -G'  # BSD/OS X
 fi
 
-# General purpose console aliases
+# General purpose app development aliases
 alias co='[ -e mix.exs ] && iex -S mix || bundle exec rails console'
 alias hco="heroku run '[ -e mix.exs ] && iex -S mix || bundle exec rails console'"
+alias mig="[ -f mix.exs ] && mix ecto.migrate || rake db:migrate"
 
 # Ruby on Rails
 alias sc='bundle exec rails console'
@@ -43,7 +44,6 @@ alias rs='rake spec'
 alias rsu='rake spec:unit'
 alias rsua='rake spec:unit:all'
 alias rsa='rake spec:all'
-alias mig='rake db:migrate'
 alias tdev='tail -n 90 -f log/development.log'
 alias tdevp='tdev | egrep "*Parameters"'
 alias tprod='tail -f log/production.log'
