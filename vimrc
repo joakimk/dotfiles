@@ -85,7 +85,7 @@ let g:ctrlp_switch_buffer = 0
 
 " Ignores for elixir projects
 " ctrlp does not seem to respect wildignore for this?
-let g:ctrlp_custom_ignore = '\v[\/](deps|_build|node_modules|priv\/static)$'
+let g:ctrlp_custom_ignore = '\v[\/](deps|_build|node_modules|priv\/static|web\/static\/vendor\/compiled_elm/)$'
 
 " Don't let ctrlp change the working directory. Instead it now uses
 " the directory where vim was started. This fixes issues with some
