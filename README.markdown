@@ -27,6 +27,10 @@ I'm assuming MacVim (`brew install macvim`) and at least Vim 7.
 
 Vim plugins are each their own directory under vim/bundles thanks to [Pathogen](http://www.vim.org/scripts/script.php?script_id=2332).
 
+## Todo
+
+* The "m" command breaks in some situations. Tempfix that sometimes work: `:unlet g:autoloaded_rails`.
+
 ## Extras
 
 The `extras` directory contains additional configuration files that are not dotfiles:
