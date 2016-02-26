@@ -68,6 +68,9 @@ set backspace=indent,eol,start  " Allow backspacing over everything in insert mo
 set nolist
 set lbr
 
+" Autocomplete names with dashes, like ".some-css-selector"
+set iskeyword+=\-
+
 " NERDTree configuration
 let NERDTreeIgnore=['\.rbc$', '\~$']
 
