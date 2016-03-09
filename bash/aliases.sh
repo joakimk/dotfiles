@@ -106,10 +106,3 @@ alias online="ping -c 1 www.sunet.se &> /dev/null && echo 'Online :)' || echo 'O
 alias v="vagrant"
 alias ta='tmux attach'
 alias to='teamocil --here'
-
-alias paira="git config user.pair 'AR+JK' && git config user.name 'Albert Ramstedt and Joakim Kolsjö' && git config user.email 'all+albert+jocke@barsoom.se'; pair"
-alias pairk="git config user.pair 'JK+KP' && git config user.name 'Joakim Kolsjö and Kim Persson' && git config user.email 'all+jocke+kim@barsoom.se'; pair"
-alias pairt="git config user.pair 'JK+TS' && git config user.name 'Joakim Kolsjö and Tomas Skogberg' && git config user.email 'all+jocke+tomas@barsoom.se'; pair"
-alias pairv="git config user.pair 'JK+VA' && git config user.name 'Joakim Kolsjö and Victor Arias' && git config user.email 'all+jocke+victor@barsoom.se'; pair"
-alias pairf="git config user.pair 'FH+JK' && git config user.name 'Joakim Kolsjö and Fabian Hoffmann' && git config user.email 'all+fabian+jocke@barsoom.se'; pair"
-alias pairl="git config user.pair 'JK+LF' && git config user.name 'Joakim Kolsjö and Lennart Fridén' && git config user.email 'all+jocke+lennart@barsoom.se'; pair"
