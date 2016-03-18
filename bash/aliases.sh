@@ -106,3 +106,23 @@ alias online="ping -c 1 www.sunet.se &> /dev/null && echo 'Online :)' || echo 'O
 alias v="vagrant"
 alias ta='tmux attach'
 alias to='teamocil --here'
+
+# from https://github.com/tskogberg/dotfiles/blob/285abcf4200f2ba8061c1e376890a50b43985c7a/zsh/aliases.sh#L101
+udgems() {
+  git pull
+  dev
+  bundle update
+  git status | grep "not staged"
+  if [ $? -eq 0 ]; then
+    if [ -d spec ]; then
+      rake
+      rake spec
+    fi
+
+    git commit -a -m "update gems"
+    git show
+    echo "Amend to the commit message if there in any big changes and dont forget to run dev bundle!"
+  fi
+
+  dev stop
+}
