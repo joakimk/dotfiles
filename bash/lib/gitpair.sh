@@ -15,3 +15,4 @@ alias pairv="git config user.pair 'JK+VA' && git config user.name 'Joakim Kolsj�
 alias pairf="git config user.pair 'FH+JK' && git config user.name 'Joakim Kolsjö and Fabian Hoffmann' && git config user.email 'all+fabian+jocke@barsoom.se'; pair"
 alias pairl="git config user.pair 'JK+LF' && git config user.name 'Joakim Kolsjö and Lennart Fridén' && git config user.email 'all+jocke+lennart@barsoom.se'; pair"
 alias pairh="git config user.pair 'HN+JK' && git config user.name 'Henrik Nyh and Joakim Kolsjö' && git config user.email 'all+henrik+jocke@barsoom.se'; pair"
+alias pairmob="git config user.pair 'MOB' && git config user.name 'Mob' && git config user.email 'devs@auctionet.com'; pair"
