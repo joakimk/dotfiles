@@ -366,3 +366,11 @@ function! s:Dev(args)
 endfunction
 
 command! -nargs=* -complete=file Dev call s:Dev(<q-args>)
+
+" Disabled arrowkeys in insert mode
+" good for teaching beginners to stay out of insert mode :)
+" don't even notice it anymore
+imap <up> <nop>
+imap <down> <nop>
+imap <left> <nop>
+imap <right> <nop>
