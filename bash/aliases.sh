@@ -2,6 +2,9 @@
 alias p="cd ~/Projects"
 alias o="open ."  # OS X, open in Finder
 
+# Sync projects to the version in ~/Dropbox
+alias sp="~/Dropbox/projects_sync.sh"
+
 # http://www.hogbaysoftware.com/products/plaintext
 alias text='cd ~/Dropbox/PlainText; vim'
 
