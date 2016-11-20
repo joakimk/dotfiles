@@ -377,3 +377,6 @@ imap <right> <nop>
 "
 " Useful aliases
 command FormatJson %!python -m json.tool
+
+" expandtab: use spaces
+autocmd Filetype elm setlocal ts=4 sts=0 sw=4 expandtab
