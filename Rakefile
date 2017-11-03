@@ -1,4 +1,5 @@
 IGNORE_FILES = ['Rakefile', 'README.markdown', '.gitignore', 'extras']
+FILES_NOT_USED_IN_SHARED_ENVIRONMENT = [ "gitconfig" ]
 
 def error(text) STDERR.puts "!  #{text}" end
 def info(text, prefix="*") STDOUT.puts "#{prefix}  #{text}" end
@@ -17,6 +18,7 @@ task :install do
     source = File.join(Dir.pwd, file)
     basename = File.basename(source)
     next if IGNORE_FILES.include?(basename)
+    next if FILES_NOT_USED_IN_SHARED_ENVIRONMENT.include?(basename) && ENV["USER"] == "mob"
 
     destination = File.expand_path("~/.#{basename}")
     if File.symlink?(destination)
