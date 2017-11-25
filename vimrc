@@ -384,6 +384,11 @@ autocmd Filetype elm setlocal ts=4 sts=0 sw=4 expandtab
 " auto-format Elm code when saving
 let g:elm_format_autosave = 1
 
+" have elm-format fail silently since it mostly fails while you're in the
+" middle of editing something causing it to take even longer to make that
+" change.
+let g:elm_format_fail_silently = 1
+
 let g:elm_make_output_file = "/tmp/elm.js"
 
 map <leader>b :w<CR>:ElmMake<CR>
