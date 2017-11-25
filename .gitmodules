@@ -100,6 +100,6 @@
 [submodule "vim/bundle/vim-endwise"]
 	path = vim/bundle/vim-endwise
 	url = git://github.com/tpope/vim-endwise.git
-[submodule "vim/bundle/elm.vim"]
-	path = vim/bundle/elm.vim
-	url = https://github.com/lambdatoast/elm.vim.git
+[submodule "vim/bundle/elm-vim"]
+	path = vim/bundle/elm-vim
+	url = https://github.com/ElmCast/elm-vim.git

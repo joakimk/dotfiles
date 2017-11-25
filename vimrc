@@ -380,3 +380,10 @@ command FormatJson %!python -m json.tool
 
 " expandtab: use spaces
 autocmd Filetype elm setlocal ts=4 sts=0 sw=4 expandtab
+
+" auto-format Elm code when saving
+let g:elm_format_autosave = 1
+
+let g:elm_make_output_file = "/tmp/elm.js"
+
+map <leader>b :w<CR>:ElmMake<CR>
