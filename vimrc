@@ -88,7 +88,7 @@ let g:ctrlp_switch_buffer = 0
 
 " Ignores for elixir projects
 " ctrlp does not seem to respect wildignore for this?
-let g:ctrlp_custom_ignore = '\v[\/](rel|deps|_build|node_modules|priv\/static|web\/static\/vendor\/compiled_elm|\.ogg/)$'
+let g:ctrlp_custom_ignore = '\v[\/](rel|deps|_build|node_modules|elm-stuff|priv\/static|web\/static\/vendor\/compiled_elm|\.ogg/)$'
 
 " Don't let ctrlp change the working directory. Instead it now uses
 " the directory where vim was started. This fixes issues with some
@@ -99,6 +99,7 @@ let g:ctrlp_working_path_mode = 0
 set wildignore+=*.o,*.obj,.git,tmp
 set wildignore+=public/uploads,db/sphinx,vim/backup
 set wildignore+=public/uploads
+set wildignore+=elm-stuff/
 set wildignore+=tmp/
 set wildignore+=data/
 
@@ -392,3 +393,4 @@ let g:elm_format_fail_silently = 1
 let g:elm_make_output_file = "/tmp/elm.js"
 
 map <leader>b :w<CR>:ElmMake<CR>
+map <leader>v :ElmErrorDetail<CR>
