@@ -88,6 +88,11 @@ function tat() {
   tmux new-session -As "$session_name"
 }
 
+function deletebranch {
+  git branch -D $1
+  git push origin :$1
+}
+
 function _tmux_complete_session() {
   local IFS=$'\n'
   local cur=${COMP_WORDS[COMP_CWORD]}
