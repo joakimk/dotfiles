@@ -70,9 +70,6 @@
 [submodule "vim/bundle/vim-coffee-script"]
 	path = vim/bundle/vim-coffee-script
 	url = git://github.com/kchmck/vim-coffee-script.git
-[submodule "vim/bundle/vim-yaml-flattener"]
-	path = vim/bundle/vim-yaml-flattener
-	url = git://github.com/henrik/vim-yaml-flattener.git
 [submodule "vim/bundle/vimux"]
 	path = vim/bundle/vimux
 	url = git://github.com/benmills/vimux.git
