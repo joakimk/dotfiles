@@ -95,6 +95,10 @@ let g:ctrlp_custom_ignore = '\v[\/](rel|deps|_build|node_modules|elm-stuff|priv\
 " projects that has nested git directories.
 let g:ctrlp_working_path_mode = 0
 
+" Vim-mix-format
+let g:mix_format_on_save = 1
+let g:mix_format_silent_errors = 1
+
 " Files to skip.
 set wildignore+=*.o,*.obj,.git,tmp
 set wildignore+=public/uploads,db/sphinx,vim/backup
