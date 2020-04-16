@@ -58,6 +58,7 @@ alias f='script/foreman_turbux'
 alias ref='script/refresh'
 
 # Git
+alias gbc="git add --all && git rebase --continue"
 alias gl="git pull --rebase"
 alias gs="git status"
 alias gst="git status"
